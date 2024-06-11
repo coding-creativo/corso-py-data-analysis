@@ -10,9 +10,12 @@ saluta('Pippo', 24)
 saluta()
 
 def saluta(nome = None, eta = 20):
+    if nome == None:
+        print(f"Ciao ho {eta} anni")
+        return eta
     print(f"Ciao da {nome} - ho {eta} anni")
 
-saluta(5)
+saluta(None, 18)
 
 def somma(num1, num2):
     return num1 + num2
@@ -24,7 +27,7 @@ def calcolo(num1, num2):
     return num1 + num2, num1 - num2
 
 risultato = calcolo(4,5)
-print(risultato[2])
+print(risultato[1])
 
 print('ciao')
 
