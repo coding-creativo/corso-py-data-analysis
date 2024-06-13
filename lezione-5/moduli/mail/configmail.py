@@ -1,0 +1,3 @@
+mittente = ""
+password = ""
+destinatario = ""
